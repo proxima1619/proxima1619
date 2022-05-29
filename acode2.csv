@@ -1,41 +1,41 @@
 Q,A,label
-"ÀÏÁ¤ ½Ã°£À» °£°İÀ¸·Î led ÇÏ³ª°¡ ÄÑÁ³´Ù°¡ ²¨Áö´Â ÄÚµå ¸¸µé¾îÁà
+"ì¼ì • ì‹œê°„ì„ ê°„ê²©ìœ¼ë¡œ led í•˜ë‚˜ê°€ ì¼œì¡Œë‹¤ê°€ êº¼ì§€ëŠ” ì½”ë“œ ë§Œë“¤ì–´ì¤˜
 ","void setup() {
   pinMode(7, OUTPUT);
 }
  
 void loop() {
   digitalWrite(7, HIGH);
-  delay(1000);//ÀÏÁ¤ ½Ã°£À» °£°İ 1ÃÊ
+  delay(1000);//ì¼ì • ì‹œê°„ì„ ê°„ê²© 1ì´ˆ
   digitalWrite(7, LOW);
   delay(1000);
 }
 ",1
-ÀÏÁ¤ ½Ã°£À» °£°İÀ¸·Î led µÎ°³°¡ ¹ø°¥¾Æ ÄÑÁ³´Ù°¡ ²¨Áö´Â ÄÚµå ¸¸µé¾îÁà,"void setup() {
+ì¼ì • ì‹œê°„ì„ ê°„ê²©ìœ¼ë¡œ led ë‘ê°œê°€ ë²ˆê°ˆì•„ ì¼œì¡Œë‹¤ê°€ êº¼ì§€ëŠ” ì½”ë“œ ë§Œë“¤ì–´ì¤˜,"void setup() {
   pinMode(7, OUTPUT);
-  pinMode(8, OUTPUT);//µÎ¹øÂ° led
+  pinMode(8, OUTPUT);//ë‘ë²ˆì§¸ led
 }
  
 void loop() {
   digitalWrite(7, HIGH);
   digitalWrite(8, LOW);
-  delay(1000);//ÀÏÁ¤ ½Ã°£À» °£°İ 1ÃÊ
+  delay(1000);//ì¼ì • ì‹œê°„ì„ ê°„ê²© 1ì´ˆ
   digitalWrite(7, LOW);
   digitalWrite(8, HIGH);
   delay(1000);
 }",1
-"ÀÏÁ¤ ½Ã°£À» °£°İÀ¸·Î led ¼¼°³°¡ ¹ø°¥¾Æ ÄÑÁ³´Ù°¡ ²¨Áö´Â ÄÚµå ¸¸µé¾îÁà
+"ì¼ì • ì‹œê°„ì„ ê°„ê²©ìœ¼ë¡œ led ì„¸ê°œê°€ ë²ˆê°ˆì•„ ì¼œì¡Œë‹¤ê°€ êº¼ì§€ëŠ” ì½”ë“œ ë§Œë“¤ì–´ì¤˜
 ","void setup() {
   pinMode(7, OUTPUT);
-  pinMode(8, OUTPUT);//µÎ¹øÂ° led
-  pinMode(9, OUTPUT);//¼¼¹øÂ° led
+  pinMode(8, OUTPUT);//ë‘ë²ˆì§¸ led
+  pinMode(9, OUTPUT);//ì„¸ë²ˆì§¸ led
 }
  
 void loop() {
   digitalWrite(7, HIGH);
   digitalWrite(8, LOW);
   digitalWrite(9, LOW);
-  delay(1000);//ÀÏÁ¤ ½Ã°£À» °£°İ 1ÃÊ
+  delay(1000);//ì¼ì • ì‹œê°„ì„ ê°„ê²© 1ì´ˆ
   digitalWrite(7, LOW);
   digitalWrite(8, HIGH);
   digitalWrite(9, LOW);
@@ -45,39 +45,39 @@ void loop() {
   digitalWrite(9, HIGH);
   delay(1000);
 }",1
-"ÀÏÁ¤ ½Ã°£À» °£°İÀ¸·Î led µÎ°³°¡ µ¿½Ã¿¡ ÄÑÁ³´Ù°¡ ²¨Áö´Â ÄÚµå ¸¸µé¾îÁà
+"ì¼ì • ì‹œê°„ì„ ê°„ê²©ìœ¼ë¡œ led ë‘ê°œê°€ ë™ì‹œì— ì¼œì¡Œë‹¤ê°€ êº¼ì§€ëŠ” ì½”ë“œ ë§Œë“¤ì–´ì¤˜
 ","void setup() {
   pinMode(7, OUTPUT);
-  pinMode(8, OUTPUT);//µÎ¹øÂ° led
+  pinMode(8, OUTPUT);//ë‘ë²ˆì§¸ led
 }
  
 void loop() {
   digitalWrite(7, HIGH);
   digitalWrite(8, HIGH);
-  delay(1000);//ÀÏÁ¤ ½Ã°£À» °£°İ 1ÃÊ
+  delay(1000);//ì¼ì • ì‹œê°„ì„ ê°„ê²© 1ì´ˆ
   digitalWrite(7, LOW);
   digitalWrite(8, LOW);
   delay(1000);
 }
 ",1
-"ÀÏÁ¤ ½Ã°£À» °£°İÀ¸·Î led ¼¼°³°¡ µ¿½Ã¿¡ ÄÑÁ³´Ù°¡ ²¨Áö´Â ÄÚµå ¸¸µé¾îÁà
+"ì¼ì • ì‹œê°„ì„ ê°„ê²©ìœ¼ë¡œ led ì„¸ê°œê°€ ë™ì‹œì— ì¼œì¡Œë‹¤ê°€ êº¼ì§€ëŠ” ì½”ë“œ ë§Œë“¤ì–´ì¤˜
 ","void setup() {
   pinMode(7, OUTPUT);
-  pinMode(8, OUTPUT);//µÎ¹øÂ° led
-  pinMode(9, OUTPUT);//¼¼¹øÂ° led
+  pinMode(8, OUTPUT);//ë‘ë²ˆì§¸ led
+  pinMode(9, OUTPUT);//ì„¸ë²ˆì§¸ led
 }
  
 void loop() {
   digitalWrite(7, HIGH);
   digitalWrite(8, HIGH);
   digitalWrite(9, HIGH);
-  delay(1000);//ÀÏÁ¤ ½Ã°£À» °£°İ 1ÃÊ
+  delay(1000);//ì¼ì • ì‹œê°„ì„ ê°„ê²© 1ì´ˆ
   digitalWrite(7, LOW);
   digitalWrite(8, LOW);
   digitalWrite(9, LOW);
   delay(1000);
 }",1
-"»ï»ö led¸¦ ÀÌ¿ëÇÏ¿© ÀÏÁ¤ ½Ã°£À» °£°İÀ¸·Î ±ô¹ÚÀÌ´Â ÄÚµå ¸¸µé¾îÁà
+"ì‚¼ìƒ‰ ledë¥¼ ì´ìš©í•˜ì—¬ ì¼ì • ì‹œê°„ì„ ê°„ê²©ìœ¼ë¡œ ê¹œë°•ì´ëŠ” ì½”ë“œ ë§Œë“¤ì–´ì¤˜
 ","int redPin = 11;
 int greenPin = 10;
 int bluePin = 9;
@@ -125,7 +125,7 @@ void loop()
   delay(1000);
 }
  
-void setColor(int red, int green, int blue)
+void setColor(int red, int green, int blue)//ì‚¼ìƒ‰ led
 {
   analogWrite(redPin, red);
   analogWrite(greenPin, green);
