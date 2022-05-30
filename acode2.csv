@@ -1,7 +1,7 @@
 Q,A,label
 "일정 시간을 간격으로 led 하나가 켜졌다가 꺼지는 코드 만들어줘
 ","void setup() {
-  pinMode(7, OUTPUT);
+  pinMode(7, OUTPUT);//led 하나
 }
  
 void loop() {
@@ -52,7 +52,7 @@ void loop() {
 }
  
 void loop() {
-  digitalWrite(7, HIGH);
+  digitalWrite(7, HIGH);//동시에 
   digitalWrite(8, HIGH);
   delay(1000);//일정 시간을 간격 1초
   digitalWrite(7, LOW);
@@ -68,7 +68,7 @@ void loop() {
 }
  
 void loop() {
-  digitalWrite(7, HIGH);
+  digitalWrite(7, HIGH);//동시에
   digitalWrite(8, HIGH);
   digitalWrite(9, HIGH);
   delay(1000);//일정 시간을 간격 1초
@@ -91,9 +91,9 @@ void setup()
  
 void loop()
 {
-  setColor(255, 0, 0); // red
+  setColor(255, 0, 0); // 빨강
   delay(1000);
-  setColor(0, 255, 0); // green
+  setColor(0, 255, 0); // 초록
   delay(1000);
   setColor(0, 0, 255); // blue
   delay(1000);
