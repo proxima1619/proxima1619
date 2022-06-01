@@ -1,13 +1,13 @@
 Q,A,label
 "일정 시간을 간격으로 led 하나가 켜졌다가 꺼지는 코드 만들어줘
-","//일정 시간을 간격으로 led 하나가 켜졌다가 꺼지는 코드
+","
 void setup() {
-  pinMode(7, OUTPUT);//led 하나
+  pinMode(7, OUTPUT);
 }
  
 void loop() {
   digitalWrite(7, HIGH);
-  delay(1000);//일정 시간을 간격 1초
+  delay(1000);
   digitalWrite(7, LOW);
   delay(1000);
 }
@@ -15,30 +15,30 @@ void loop() {
 일정 시간을 간격으로 led 두개가 번갈아 켜졌다가 꺼지는 코드 만들어줘,"//일정 시간을 간격으로 led 두개가 번갈아 켜졌다가 꺼지는 코드
 void setup() {
   pinMode(7, OUTPUT);
-  pinMode(8, OUTPUT);//두번째 led
+  pinMode(8, OUTPUT);
 }
  
 void loop() {
   digitalWrite(7, HIGH);
   digitalWrite(8, LOW);
-  delay(1000);//일정 시간을 간격 1초
+  delay(1000);
   digitalWrite(7, LOW);
   digitalWrite(8, HIGH);
   delay(1000);
 }",1
 "일정 시간을 간격으로 led 세개가 번갈아 켜졌다가 꺼지는 코드 만들어줘
-","//일정 시간을 간격으로 led 세개가 번갈아 켜졌다가 꺼지는 코드
+","
 void setup() {
   pinMode(7, OUTPUT);
-  pinMode(8, OUTPUT);//두번째 led
-  pinMode(9, OUTPUT);//세번째 led
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
 }
  
 void loop() {
   digitalWrite(7, HIGH);
   digitalWrite(8, LOW);
   digitalWrite(9, LOW);
-  delay(1000);//일정 시간을 간격 1초
+  delay(1000);
   digitalWrite(7, LOW);
   digitalWrite(8, HIGH);
   digitalWrite(9, LOW);
@@ -49,41 +49,41 @@ void loop() {
   delay(1000);
 }",2
 "일정 시간을 간격으로 led 두개가 동시에 켜졌다가 꺼지는 코드 만들어줘
-","//일정 시간을 간격으로 led 두개가 동시에 켜졌다가 꺼지는 코드
+","
 void setup() {
   pinMode(7, OUTPUT);
-  pinMode(8, OUTPUT);//두번째 led
+  pinMode(8, OUTPUT);
 }
  
 void loop() {
-  digitalWrite(7, HIGH);//동시에 
+  digitalWrite(7, HIGH);
   digitalWrite(8, HIGH);
-  delay(1000);//일정 시간을 간격 1초
+  delay(1000);
   digitalWrite(7, LOW);
   digitalWrite(8, LOW);
   delay(1000);
 }
 ",2
 "일정 시간을 간격으로 led 세개가 동시에 켜졌다가 꺼지는 코드 만들어줘
-","//일정 시간을 간격으로 led 세개가 동시에 켜졌다가 꺼지는 코드
+","
 void setup() {
   pinMode(7, OUTPUT);
-  pinMode(8, OUTPUT);//두번째 led
-  pinMode(9, OUTPUT);//세번째 led
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
 }
  
 void loop() {
-  digitalWrite(7, HIGH);//동시에
+  digitalWrite(7, HIGH);
   digitalWrite(8, HIGH);
   digitalWrite(9, HIGH);
-  delay(1000);//일정 시간을 간격 1초
+  delay(1000);
   digitalWrite(7, LOW);
   digitalWrite(8, LOW);
   digitalWrite(9, LOW);
   delay(1000);
 }",3
 "삼색 led를 이용하여 일정 시간을 간격으로 깜박이는 코드 만들어줘
-","//삼색 led를 이용하여 일정 시간을 간격으로 깜박이는 코드
+","
 int redPin = 11;
 int greenPin = 10;
 int bluePin = 9;
@@ -97,15 +97,15 @@ void setup()
  
 void loop()
 {
-  setColor(255, 0, 0); // 빨강
+  setColor(255, 0, 0); 
   delay(1000);
-  setColor(0, 255, 0); // 초록
+  setColor(0, 255, 0); 
   delay(1000);
   setColor(0, 0, 255); // blue
   delay(1000);
 }
  
-void setColor(int red, int green, int blue)//삼색 led
+void setColor(int red, int green, int blue)
 {
   analogWrite(redPin, red);
   analogWrite(greenPin, green);
